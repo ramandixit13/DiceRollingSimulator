@@ -1,8 +1,45 @@
+# a dice simulator 
+
 import random
-#When you run the program you'll get a random number between 1-6
-roll_again="yes"
-#if you want to roll again you can give the input accordingly
-while(roll_again=="yes" or roll_again=="y"):
-    #random.randint() function will give you a random integer from the specified range
-    print(random.randint(1,7))
-    roll_again=input("Do you want to roll again: y/yes or n/no:: ")
+x = "y"
+
+while x == "y":
+    number = random.randint(1,6)
+
+    if number == 1:
+        print("----------")
+        print("|        |")
+        print("|    O   |")
+        print("|        |")
+        print("----------")
+    if number == 2:
+        print("----------")
+        print("|        |")
+        print("| O    O |")
+        print("|        |")
+        print("----------")
+    if number == 3:
+        print("----------")
+        print("|    O   |")
+        print("|    O   |")
+        print("|    O   |")
+        print("----------")
+    if number == 4:
+        print("----------")
+        print("| O    O |")
+        print("|        |")
+        print("| O    O |")
+        print("----------")
+    if number == 5:
+        print("----------")
+        print("| O    O |")
+        print("|    O   |")
+        print("| O    O |")
+        print("----------")
+    if number == 6:
+        print("----------")
+        print("| O    O |")
+        print("| O    O |")
+        print("| O    O |")
+        print("----------")
+    x = input("Press y to roll again")
